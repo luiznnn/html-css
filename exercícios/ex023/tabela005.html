@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicío de Tabelas</title>
+     <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse:collapse ;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+            }
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+
+        }
+        col.Nome{
+            background-color: rgb(0, 255, 145);
+        }
+        col.Sexo, col.Idade{
+            background-color: rgb(225, 255, 0);
+        }
+     </style>
+</head>
+<body>
+    <h1>Exercicío de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="Nome">
+            <col class=" Sexo">
+            <col class="Idade">
+            <col class="Profissão">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th  scope="col">Nome</th>
+            <th  scope="col">Sexo</th>
+            <th  scope="col">Idade</th>
+            <th  scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>... </td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Luiz</td>
+            <td>M</td>
+            <td>20</td>
+            <td>ADS</td>
+        </tr>
+        <tr>
+            <td>Antonio</td>
+            <td>M</td>
+            <td>23</td>
+            <td>Fi do prefeito</td>
+        </tr>
+        <tr>
+            <td >Marcos</td>
+            <td>M</td>
+            <td>26</td>
+            <td>Motoboy</td>
+        </tr>
+        <tr>
+            <td>Lari</td>
+            <td>F</td>
+            <td>17</td>
+            <td>...</td>
+        </tr>
+        <tr>
+            <td>Taynara</td>
+            <td>F</td>
+            <td>16</td>
+            <td>Do Marcos</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
