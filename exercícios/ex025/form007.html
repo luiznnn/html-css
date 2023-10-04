@@ -13,12 +13,30 @@
         <p>
             <label for="iest">Estado</label>
             <select name="estado" id="iest">
-                <option value="MT">Mato Grosso</option> 
-                <option value="MG">Minas Gerais</option>               <option value="RJ">Rio De Janeiro</option>
+                <option value="select">  --Escolha--</option>
+                <optgroup label="Região">
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MG">Minas Gerais</option>               <option value="RJ">Rio De Janeiro</option>
+                </optgroup>
             </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="ADS">Analisé e Desenvolvimento de Sistemas</option>
+                <option value="DEV">Desenvolvedor</option>
+            </datalist>
         </p>
 
         <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Mensagem aqui"></textarea>
+        </p>
+
+         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limapar">
         </p>
